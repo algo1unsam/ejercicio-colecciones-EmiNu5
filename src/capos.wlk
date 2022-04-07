@@ -14,11 +14,11 @@ object rolando {
 		casa.guardar(artefactos)
 		artefactos.clear()
 	}
-	method inventario(){
+	method MostrarInventario(){
 		return self.artefactos() + casa.mostrarBaul()
 	}
-	method buscarArticulo(_artefacto){
-		return self.inventario().contains(_artefacto)
+	method buscarArtefacto(_artefacto){
+		return self.MostrarInventario().contains(_artefacto)
 	}
 }
 //Casa
